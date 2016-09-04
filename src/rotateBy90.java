@@ -32,9 +32,9 @@ public class rotateBy90 {
 				{
 					System.out.print(matrix[i][j]+" ");;
 				}
-				
+				System.out.println();
 			}
-			System.out.println();
+			
 			
 		}
 		
