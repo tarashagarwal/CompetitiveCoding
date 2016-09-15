@@ -15,7 +15,7 @@ public class LONGSEQ {
 		while(T-->0)
 		{
 			String str=br.readLine();
-			int N=Integer.parseInt(str);
+			
 
 			HashMap <Integer,Integer> map=new HashMap<>();
 
@@ -23,12 +23,12 @@ public class LONGSEQ {
 
 			for(int i=0;i<L;i++)
 			{
-				int dig=N%10;
+				int dig=Integer.parseInt(""+str.charAt(i));
 				if(map.get(dig)==null)
 					map.put(dig,1);
 				else
 					map.put(dig,map.get(dig)+1);
-				N/=10;
+				
 			}
 			
 			if((map.get(0)!=null && map.get(0)==1 )||(map.get(1)!=null && map.get(1)==1))
